@@ -1,4 +1,5 @@
 def anagrams(word, words):
+	#Funciona pero está muy ineficiente, hay formas mejores de hacer esto.
 	result = []
 	dicc1 = {}
 

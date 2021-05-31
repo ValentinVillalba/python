@@ -10,10 +10,10 @@ class Stack():
 	__slots__=['_top']
 
 	def __init__(self):
-		self.top = None
+		self._top = None
 
-	def push(self, item):
-		self._top = Stack._Node(item, self._top)
+	def push(self, value):
+		self._top = Stack._Node(value, self._top)
 
 	def pop(self):
 		assert not self.is_empty(), 'LA PILA ESTA VACIA'
@@ -21,16 +21,22 @@ class Stack():
 		self._top = self._top.next
 		return value
 
+	#EL COPY ES RECURSIVO
+	#VENTAJA: NO HACE FALTA UNA VARIABLE QUE ALMACENE EL VALOR.
 	def copy(self):
+		def do_copy(node):
+			if node == None:
+				return None
+			else:
+				new_node = Stack._Node(node.value, None)
+				new_node.next = do_copy(node.next)
+				return new_node
+
 		new_stack = Stack()
 		if not self.is_empty():
-			node = self._top
-			new_node = Stack._Node(node.value, None)
+			new_node = Stack._Node(self._top.value, None)
+			new_node.next = do_copy(self._top.next)
 			new_stack._top = new_node
-			while node.next is not None:
-				node = node.next
-				new_node.next = Stack._Node(node.value, None)
-				new_node = new_node.next
 		return new_stack
 
 	def clear(self):
@@ -38,4 +44,12 @@ class Stack():
 
 	#OBSERVADORES:
 	def is_empty(self):
-        return self._top is None
+		return self._top is None
+
+	def __repr__(self):
+		values = []
+		node = self._top
+		while node is not None:
+			values.insert(0, node.value)
+			node = node.next
+		return 'Stack([' + ', '.join(repr(x) for x in values) + '])'

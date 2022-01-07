@@ -1,6 +1,4 @@
-#QUE CAPO QUE SOOOOOOOOOOOOOOOOOOOOOY
-#AAAAAAAAAAAAAAAAAAAAAAAAAAAA
-#literalmente un genio de los algoritmos
+#fue dificil pero estoy feliz con el resultado
 def snail(snail_map):
 	result = []
 	while len(snail_map) > 0:

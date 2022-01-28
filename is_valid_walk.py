@@ -5,7 +5,7 @@ def is_valid_walk(walk):
             dic[i] += 1
     return (len(walk) == 10 and dic["n"] == dic["s"] and dic["e"] == dic["w"])
   
-walk = ["n","s","n","e","o","s"]
+walk = ["n","s","n","e","w","s","e","e","w","w"]
 is_valid_walk(walk)
 
-#imagine count() does not exits.
+#condition: imagine count() does not exist.

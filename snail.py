@@ -1,4 +1,4 @@
-#fue dificil pero estoy feliz con el resultado
+#fue dificil pero estoy feliz con el resultado a pesar de no ser muy eficiente
 def snail(snail_map):
 	result = []
 	while len(snail_map) > 0:

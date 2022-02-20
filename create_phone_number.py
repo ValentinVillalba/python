@@ -1,5 +1,5 @@
 def create_phone_number(number):
-	#funciona perfecto para todo y queda bastante cortito la verdad un capo
+	#funciona para todo y queda bastante cortito
 	phone = ""
 	for i in number:
 		phone += str(i)

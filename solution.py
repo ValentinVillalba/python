@@ -1,5 +1,5 @@
 def solution(number):
-	#un capo funciona para todos los casos y va re bien *carita fachera*
+	#funciona para todos los casos pero considero que podria estar mejor
 	n=number - 1
 	total=0
 	while n > 0:

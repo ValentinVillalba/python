@@ -1,5 +1,4 @@
 def max_sequence(arr):
-	#que capo que soy B)
 	max_sum,result = 0,0
 	for i in arr:
 		result += i

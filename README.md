@@ -1,3 +1,3 @@
 # python
-small python programs created for testing purposes. <br>
+small python functions created for specific purposes. <br>
 made by <b>Villal<b>.

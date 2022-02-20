@@ -1,3 +1,4 @@
+#ayuda para un trabajo de la facultad de un amigo
 numero = 0
 
 while numero >= 0:

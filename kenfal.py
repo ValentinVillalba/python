@@ -1,4 +1,4 @@
-#ayuda para un trabajo de la facultad de un amigo
+#ayudando a un amigo con un trabajo de la facultad
 numero = 0
 
 while numero >= 0:
